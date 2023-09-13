@@ -63,29 +63,10 @@ To setup your prefered searches add a variable called `rootSearches`:
   "name": "tinytacoteam/zazu-fallback",
   "variables": {
     "rootSearches": ["google", "library"]
-  }
+  },
+  "openai_key": "YOUR KEY"
 }
 ~~~
-
-## Searches
-
-* `amazon`: [Amazon](https://www.amazon.com/)
-* `duck`: [DuckDuckGo](https://duckduckgo.com/)
-* `giphy`: [Giphy](https://giphy.com/)
-* `gh`: [GitHub](https://github.com/)
-* `google`: [Google](https://www.google.com/)
-* `images`: [Google Images](https://www.google.com/)
-* `maps`: [Google Maps](https://www.google.com/)
-* `npm`: [NPM](https://www.npmjs.com/)
-* `packagist`: [Packagist](https://packagist.org)
-* `translate`: [Google Translate](https://translate.google.com/)
-* `twitter`: [Twitter](https://twitter.com/)
-* `stack`: [Stack Overflow](https://stackoverflow.com/)
-* `ud`: [Urban Dictionary](https://www.urbandictionary.com/)
-* `wiki`: [Wikipedia](https://wikipedia.org/)
-* `wolf`: [Wolfram Alpha](https://www.wolframalpha.com/)
-* `youtube`: [YouTube](https://www.youtube.com/)
-* `thing`: [Thingiverse](https://www.thingiverse.com/)
 
 ## Screenshot
 

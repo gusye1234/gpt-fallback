@@ -24,8 +24,8 @@ module.exports = (pluginContext) => {
         [
           {
             icon: search.icon || path.join('assets', prefix + '.png'),
-            title: 'Search ' + search.name + ' for ' + term,
-            value: search.url + encodeURIComponent(term)
+            title: 'Ask your library: ' + term,
+            value: search.url + env.openaiKey + term
           }
         ]
       )

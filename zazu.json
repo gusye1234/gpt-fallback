@@ -1,7 +1,7 @@
 {
   "name": "Fallback",
   "version": "0.0.1",
-  "description": "Fallback websearch plugin for unmatched actions",
+  "description": "Fallback web search plugin for unmatched actions",
   "icon": "icon.png",
   "blocks": {
     "input": [
@@ -10,31 +10,15 @@
         "type": "RootScript",
         "script": "prefix.js",
         "connections": [
-          "Open"
-        ]
-      },
-      {
-        "id": "Http",
-        "type": "RootScript",
-        "script": "http.js",
-        "connections": [
-          "Open"
-        ]
-      },
-      {
-        "id": "Root",
-        "type": "RootScript",
-        "script": "root.js",
-        "connections": [
-          "Open"
+          "Display"
         ]
       }
     ],
     "output": [
       {
-        "id": "Open",
-        "type": "OpenInBrowser",
-        "url": "{value}"
+        "id": "Display",
+        "type": "Preview",
+        "message": "{value}"
       }
     ]
   }
