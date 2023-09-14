@@ -7,18 +7,42 @@
     "input": [
       {
         "id": "Prefix",
-        "type": "RootScript",
-        "script": "prefix.js",
+        "type": "PrefixScript",
+        "prefix": "ask",
+        "space": true,
+        "args": "Required",
+        "script": "src/index.js",
         "connections": [
-          "Display"
+          "Process"
+        ]
+      },
+      {
+        "id": "Reload_Key",
+        "type": "Keyword",
+        "keyword": "reload",
+        "title": "Reload",
+        "subtitle": "Reload your MemoWrite",
+        "icon": "fa-play",
+        "connections": [
+          "Reload"
         ]
       }
     ],
     "output": [
       {
-        "id": "Display",
-        "type": "Preview",
+        "id": "Process",
+        "type": "UserScript",
+        "script": "src/process.js",
+        "connections": ["Copy"]
+      },
+      {
+        "id": "Copy",
+        "type": "CopyToClipboard",
         "message": "{value}"
+      },
+      {
+        "id": "Reload",
+        "type": "ReloadConfig"
       }
     ]
   }
